@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	
+	<!--Подключение стилей Swiper slider-->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	
+	<!-- font awesome cdn link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	
+	<link rel="stylesheet" href="assets/css/style.min.css">
+	
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow, noodp">
+	<meta name="googlebot" content="index, follow">
+	<meta name="google" content="notranslate">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	
+	<title>Travel</title>
+	
+	<!--Подключение jQuery-->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> --></head>
+
+<body>
+
+	<div class="wrapper">
+
+		<svg>
+		
+		    <symbol id="burger" viewbox="0 0 448 512">
+		        <g>
+		            <path
+		                d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+		        </g>
+		    </symbol>
+		
+		</svg>		<header class="header">
+		    <div class="header__container container">
+		        <div class="header__bar">
+		
+		            <a href="#" class="header__logo"><i class="fa-solid fa-person-hiking"></i> Travel. </a>
+		
+		            <nav class="header__menu menu">
+		                <a href="#" data-target=".main" class="menu__link">Home</a>
+		                <a href="#" data-target=".about" class="menu__link">About</a>
+		                <a href="#" data-target=".products" class="menu__link">Shop</a>
+		                <a href="#" data-target=".packages" class="menu__link">Packages</a>
+		                <a href="#" data-target=".reviews" class="menu__link">Reviews</a>
+		                <a href="#" data-target=".blog" class="menu__link">Blogs</a>
+		            </nav>
+		
+		            <div class="header__icons icons">
+		                <a href="#" class="icons__item"><i class="fa-solid fa-cart-shopping"></i></a>
+		                <a href="#" class="icons__item search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+		                <a href="#" class="icons__item burger">
+		                    <svg>
+		                        <use xlink: href="#burger"></use>
+		                    </svg>
+		                </a>
+		            </div>
+		
+		        </div>
+		    </div>
+		
+		    <div class="search">
+		        <form action="" class="serch__form">
+		            <input type="text" placeholder="search here...">
+		            <button class="search__btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+		            <a href="#" class="search__close"><i class="fa-solid fa-xmark"></i></a>
+		        </form>
+		    </div>
+		</header>		<section class="main" id="home">
+		    <div class="main__slider swiper">
+		        <div class="main__wrapper swiper-wrapper">
+		            <div class="main__slide swiper-slide">
+		                <div class="main__container container main__container--right">
+		
+		                    <div class="main__image">
+		                        <img src="assets/img/main/home-bg-1.jpg" alt="">
+		                    </div>
+		
+		                    <div class="main__content">
+		                        <div class="main__lable">Never Stop</div>
+		                        <div class="main__title">Exploring</div>
+		                        <div class="main__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+		                            unde
+		                            ex molestias soluta consequatur saepe aliquam, excepturi delectus consequuntur minus!</div>
+		                        <a href="#" class="main__btn btn">Get Started</a>
+		                    </div>
+		
+		                </div>
+		            </div>
+		            <div class="main__slide swiper-slide">
+		                <div class="main__container container main__container--left">
+		
+		                    <div class="main__image">
+		                        <img src="assets/img/main/home-bg-2.jpg" alt="">
+		                    </div>
+		
+		                    <div class="main__content">
+		                        <div class="main__lable">Make Tour</div>
+		                        <div class="main__title">Amazing</div>
+		                        <div class="main__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+		                            unde
+		                            ex molestias soluta consequatur saepe aliquam, excepturi delectus consequuntur minus!</div>
+		                        <a href="#" class="main__btn btn">Get Started</a>
+		                    </div>
+		
+		                </div>
+		            </div>
+		            <div class="main__slide swiper-slide">
+		                <div class="main__container container main__container--right">
+		
+		                    <div class="main__image">
+		                        <img src="assets/img/main/home-bg-3.jpg" alt="">
+		                    </div>
+		
+		                    <div class="main__content">
+		                        <div class="main__lable">Explore the</div>
+		                        <div class="main__title">New World</div>
+		                        <div class="main__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+		                            unde
+		                            ex molestias soluta consequatur saepe aliquam, excepturi delectus consequuntur minus!</div>
+		                        <a href="#" class="main__btn btn">Get Started</a>
+		                    </div>
+		
+		                </div>
+		            </div>
+		        </div>
+		        <div class="swiper-button-prev"></div>
+		        <div class="swiper-button-next"></div>
+		    </div>
+		
+		</section>		<section class="idea">
+		    <h2 class="idea__title title">Adventure Idea!</h2>
+		    <div class="idea__container container">
+		        <div class="idea__elements">
+		            <div class="idea__element">
+		                <div class="idea__image">
+		                    <img src="assets/img/idea/category-1.jpg" alt="">
+		                </div>
+		                <h3 class="idea__subtitle">Bungee Jump</h3>
+		                <div class="idea__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.
+		                </div>
+		                <a href="#" class="idea__btn btn">Read More</a>
+		            </div>
+		            <div class="idea__element">
+		                <div class="idea__image">
+		                    <img src="assets/img/idea/category-2.jpg" alt="">
+		                </div>
+		                <h3 class="idea__subtitle">Zip Lines</h3>
+		                <div class="idea__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.
+		                </div>
+		                <a href="#" class="idea__btn btn">Read More</a>
+		            </div>
+		            <div class="idea__element">
+		                <div class="idea__image">
+		                    <img src="assets/img/idea/category-3.jpg" alt="">
+		                </div>
+		                <h3 class="idea__subtitle">Canoeing</h3>
+		                <div class="idea__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.
+		                </div>
+		                <a href="#" class="idea__btn btn">Read More</a>
+		            </div>
+		            <div class="idea__element">
+		                <div class="idea__image">
+		                    <img src="assets/img/idea/category-4.jpg" alt="">
+		                </div>
+		                <h3 class="idea__subtitle">Kayaking</h3>
+		                <div class="idea__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id.
+		                </div>
+		                <a href="#" class="idea__btn btn">Read More</a>
+		            </div>
+		        </div>
+		    </div>
+		</section>		<section class="about" id="about">
+		    <div class="about__container container">
+		        <div class="about__content">
+		            <div class="about__image"><img src="assets/img/about/about-img.jpg" alt=""></div>
+		            <div class="about__info">
+		                <h2 class="about__title">Memorable Outdoor Experiences</h2>
+		                <div class="about__text text">
+		                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque voluptates corrupti natus
+		                        necessitatibus beatae voluptatibus, deserunt quo soluta minima libero laborum, corporis error
+		                        esse vitae placeat blanditiis reiciendis vel? Minima.</p>
+		                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta doloremque placeat
+		                        porro, ipsam quia at beatae atque odit iste?</p>
+		                </div>
+		                <a href="#" class="about__btn btn">Read More</a>
+		            </div>
+		        </div>
+		    </div>
+		</section>		<section class="products">
+		    <div class="products__container container">
+		        <h2 class="products__title title">Featured Products</h2>
+		        <div class="products__items">
+		            <div class="products__wrapper swiper-wrapper">
+		                <div class="products__element swiper-slide">
+		                    <div class="products__image">
+		                        <img src="assets/img/products/product-1.jpg" alt="">
+		                        <div class="products__btns">
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-cart-shopping"></i></a>
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-eye"></i></a>
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-share"></i></a>
+		                        </div>
+		                    </div>
+		                    <h3 class="products__name">Survival Kits</h3>
+		                    <div class="products__price">$5.00 - $25.00</div>
+		                    <div class="products__rating rating">
+		                        <div class="rating__body">
+		                            <div class="rating__active"></div>
+		                            <div class="rating__items">
+		                                <input type="radio" class="radio__item" value="1" name="rating">
+		                                <input type="radio" class="radio__item" value="2" name="rating">
+		                                <input type="radio" class="radio__item" value="3" name="rating">
+		                                <input type="radio" class="radio__item" value="4" name="rating">
+		                                <input type="radio" class="radio__item" value="5" name="rating">
+		                            </div>
+		                        </div>
+		                        <div class="rating__value">4.5</div>
+		                    </div>
+		                </div>
+		                <div class="products__element swiper-slide">
+		                    <div class="products__image">
+		                        <img src="assets/img/products/product-2.jpg" alt="">
+		                        <div class="products__btns">
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-cart-shopping"></i></a>
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-eye"></i></a>
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-share"></i></a>
+		                        </div>
+		                    </div>
+		                    <h3 class="products__name">Survival Kits</h3>
+		                    <div class="products__price">$5.00 - $25.00</div>
+		                    <div class="products__rating rating">
+		                        <div class="rating__body">
+		                            <div class="rating__active"></div>
+		                            <div class="rating__items">
+		                                <input type="radio" class="radio__item" value="1" name="rating">
+		                                <input type="radio" class="radio__item" value="2" name="rating">
+		                                <input type="radio" class="radio__item" value="3" name="rating">
+		                                <input type="radio" class="radio__item" value="4" name="rating">
+		                                <input type="radio" class="radio__item" value="5" name="rating">
+		                            </div>
+		                        </div>
+		                        <div class="rating__value">3.6</div>
+		                    </div>
+		                </div>
+		                <div class="products__element swiper-slide">
+		                    <div class="products__image">
+		                        <img src="assets/img/products/product-3.jpg" alt="">
+		                        <div class="products__btns">
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-cart-shopping"></i></a>
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-eye"></i></a>
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-share"></i></a>
+		                        </div>
+		                    </div>
+		                    <h3 class="products__name">Survival Kits</h3>
+		                    <div class="products__price">$5.00 - $25.00</div>
+		                    <div class="products__rating rating">
+		                        <div class="rating__body">
+		                            <div class="rating__active"></div>
+		                            <div class="rating__items">
+		                                <input type="radio" class="radio__item" value="1" name="rating">
+		                                <input type="radio" class="radio__item" value="2" name="rating">
+		                                <input type="radio" class="radio__item" value="3" name="rating">
+		                                <input type="radio" class="radio__item" value="4" name="rating">
+		                                <input type="radio" class="radio__item" value="5" name="rating">
+		                            </div>
+		                        </div>
+		                        <div class="rating__value">5</div>
+		                    </div>
+		                </div>
+		                <div class="products__element swiper-slide">
+		                    <div class="products__image">
+		                        <img src="assets/img/products/product-4.jpg" alt="">
+		                        <div class="products__btns">
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-cart-shopping"></i></a>
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-eye"></i></a>
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-share"></i></a>
+		                        </div>
+		                    </div>
+		                    <h3 class="products__name">Survival Kits</h3>
+		                    <div class="products__price">$5.00 - $25.00</div>
+		                    <div class="products__rating rating">
+		                        <div class="rating__body">
+		                            <div class="rating__active"></div>
+		                            <div class="rating__items">
+		                                <input type="radio" class="radio__item" value="1" name="rating">
+		                                <input type="radio" class="radio__item" value="2" name="rating">
+		                                <input type="radio" class="radio__item" value="3" name="rating">
+		                                <input type="radio" class="radio__item" value="4" name="rating">
+		                                <input type="radio" class="radio__item" value="5" name="rating">
+		                            </div>
+		                        </div>
+		                        <div class="rating__value">4.3</div>
+		                    </div>
+		                </div>
+		                <div class="products__element swiper-slide">
+		                    <div class="products__image">
+		                        <img src="assets/img/products/product-5.jpg" alt="">
+		                        <div class="products__btns">
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-cart-shopping"></i></a>
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-eye"></i></a>
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-share"></i></a>
+		                        </div>
+		                    </div>
+		                    <h3 class="products__name">Survival Kits</h3>
+		                    <div class="products__price">$5.00 - $25.00</div>
+		                    <div class="products__rating rating">
+		                        <div class="rating__body">
+		                            <div class="rating__active"></div>
+		                            <div class="rating__items">
+		                                <input type="radio" class="radio__item" value="1" name="rating">
+		                                <input type="radio" class="radio__item" value="2" name="rating">
+		                                <input type="radio" class="radio__item" value="3" name="rating">
+		                                <input type="radio" class="radio__item" value="4" name="rating">
+		                                <input type="radio" class="radio__item" value="5" name="rating">
+		                            </div>
+		                        </div>
+		                        <div class="rating__value">4.7</div>
+		                    </div>
+		                </div>
+		                <div class="products__element swiper-slide">
+		                    <div class="products__image">
+		                        <img src="assets/img/products/product-6.jpg" alt="">
+		                        <div class="products__btns">
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-cart-shopping"></i></a>
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-eye"></i></a>
+		                            <a href="#" class="product__btn"><i class="fa-solid fa-share"></i></a>
+		                        </div>
+		                    </div>
+		                    <h3 class="products__name">Survival Kits</h3>
+		                    <div class="products__price">$5.00 - $25.00</div>
+		                    <div class="products__rating rating">
+		                        <div class="rating__body">
+		                            <div class="rating__active"></div>
+		                            <div class="rating__items">
+		                                <input type="radio" class="radio__item" value="1" name="rating">
+		                                <input type="radio" class="radio__item" value="2" name="rating">
+		                                <input type="radio" class="radio__item" value="3" name="rating">
+		                                <input type="radio" class="radio__item" value="4" name="rating">
+		                                <input type="radio" class="radio__item" value="5" name="rating">
+		                            </div>
+		                        </div>
+		                        <div class="rating__value">4</div>
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="swiper-button-prev"></div>
+		            <div class="swiper-button-next"></div>
+		        </div>
+		    </div>
+		</section>		<section class="packages" id="packages">
+		    <div class="packages__container container">
+		        <h2 class="packages__title title">Popular Packages</h2>
+		        <div class="packages__elements">
+		            <div class="packages__element">
+		                <div class="packages__image"><img src="assets/img/packages/img-1.jpg" alt=""></div>
+		                <div class="packages__name">Featured Tour Package</div>
+		                <div class="packages__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.
+		                </div>
+		                <div class="packages__price">$250 - $450</div>
+		                <a href="" class="packages__btn btn">Explore Now</a>
+		            </div>
+		            <div class="packages__element">
+		                <div class="packages__image"><img src="assets/img/packages/img-2.jpg" alt=""></div>
+		                <div class="packages__name">Featured Tour Package</div>
+		                <div class="packages__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.
+		                </div>
+		                <div class="packages__price">$250 - $450</div>
+		                <a href="" class="packages__btn btn">Explore Now</a>
+		            </div>
+		            <div class="packages__element">
+		                <div class="packages__image"><img src="assets/img/packages/img-3.jpg" alt=""></div>
+		                <div class="packages__name">Featured Tour Package</div>
+		                <div class="packages__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.
+		                </div>
+		                <div class="packages__price">$250 - $450</div>
+		                <a href="" class="packages__btn btn">Explore Now</a>
+		            </div>
+		            <div class="packages__element">
+		                <div class="packages__image"><img src="assets/img/packages/img-4.jpg" alt=""></div>
+		                <div class="packages__name">Featured Tour Package</div>
+		                <div class="packages__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.
+		                </div>
+		                <div class="packages__price">$250 - $450</div>
+		                <a href="" class="packages__btn btn">Explore Now</a>
+		            </div>
+		            <div class="packages__element">
+		                <div class="packages__image"><img src="assets/img/packages/img-5.jpg" alt=""></div>
+		                <div class="packages__name">Featured Tour Package</div>
+		                <div class="packages__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.
+		                </div>
+		                <div class="packages__price">$250 - $450</div>
+		                <a href="" class="packages__btn btn">Explore Now</a>
+		            </div>
+		            <div class="packages__element">
+		                <div class="packages__image"><img src="assets/img/packages/img-6.jpg" alt=""></div>
+		                <div class="packages__name">Featured Tour Package</div>
+		                <div class="packages__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.
+		                </div>
+		                <div class="packages__price">$250 - $450</div>
+		                <a href="" class="packages__btn btn">Explore Now</a>
+		            </div>
+		        </div>
+		    </div>
+		
+		</section>		<section class="reviews">
+		    <div class="reviews__container container">
+		        <h2 class="reviews__title title">Client's Reviews</h2>
+		        <div class="reviews__block">
+		            <div class="reviews__wrapper swiper-wrapper">
+		                <div class="reviews__element swiper-slide">
+		                    <div class="reviews__comment text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+		                        quidem
+		                        laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat
+		                        obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?
+		                    </div>
+		                    <div class="reviews__author author">
+		                        <div class="author__photo">
+		                            <img src="assets/img/reviews/pic-1.png" alt="">
+		                        </div>
+		                        <div class="author__details">
+		                            <div class="author__name">John Doe</div>
+		                            <div class="author__profession">Designer</div>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="reviews__element swiper-slide">
+		                    <div class="reviews__comment text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+		                        quidem
+		                        laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat
+		                        obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?
+		                    </div>
+		                    <div class="reviews__author author">
+		                        <div class="author__photo">
+		                            <img src="assets/img/reviews/pic-2.png" alt="">
+		                        </div>
+		                        <div class="author__details">
+		                            <div class="author__name">John Doe</div>
+		                            <div class="author__profession">Designer</div>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="reviews__element swiper-slide">
+		                    <div class="reviews__comment text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+		                        quidem
+		                        laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat
+		                        obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?
+		                    </div>
+		                    <div class="reviews__author author">
+		                        <div class="author__photo">
+		                            <img src="assets/img/reviews/pic-3.png" alt="">
+		                        </div>
+		                        <div class="author__details">
+		                            <div class="author__name">John Doe</div>
+		                            <div class="author__profession">Designer</div>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="reviews__element swiper-slide">
+		                    <div class="reviews__comment text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+		                        quidem
+		                        laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat
+		                        obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?
+		                    </div>
+		                    <div class="reviews__author author">
+		                        <div class="author__photo">
+		                            <img src="assets/img/reviews/pic-4.png" alt="">
+		                        </div>
+		                        <div class="author__details">
+		                            <div class="author__name">John Doe</div>
+		                            <div class="author__profession">Designer</div>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="reviews__element swiper-slide">
+		                    <div class="reviews__comment text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+		                        quidem
+		                        laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat
+		                        obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?
+		                    </div>
+		                    <div class="reviews__author author">
+		                        <div class="author__photo">
+		                            <img src="assets/img/reviews/pic-5.png" alt="">
+		                        </div>
+		                        <div class="author__details">
+		                            <div class="author__name">John Doe</div>
+		                            <div class="author__profession">Designer</div>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="reviews__element swiper-slide">
+		                    <div class="reviews__comment text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+		                        quidem
+		                        laborum pariatur alias, culpa illum quaerat, aliquid laboriosam voluptatem nisi repellat
+		                        obcaecati, adipisci esse ab delectus dolorum ut recusandae ipsam?
+		                    </div>
+		                    <div class="reviews__author author">
+		                        <div class="author__photo">
+		                            <img src="assets/img/reviews/pic-6.png" alt="">
+		                        </div>
+		                        <div class="author__details">
+		                            <div class="author__name">John Doe</div>
+		                            <div class="author__profession">Designer</div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</section>		<section class="offer">
+		    <div class="offer__container container">
+		        <h2 class="offer__title title">What We Offer</h2>
+		        <div class="offer__cards">
+		            <div class="offer__card card">
+		                <div class="card__image"><img src="assets/img/offer/serv-1.png" alt=""></div>
+		                <h3 class="card__title">Complete Guide</h3>
+		                <div class="card__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+		                    nihil?</div>
+		                <a href="#" class="card__btn btn">Read More</a>
+		            </div>
+		            <div class="offer__card card">
+		                <div class="card__image"><img src="assets/img/offer/serv-2.png" alt=""></div>
+		                <h3 class="card__title">Custom Packages</h3>
+		                <div class="card__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+		                    nihil?</div>
+		                <a href="#" class="card__btn btn">Read More</a>
+		            </div>
+		            <div class="offer__card card">
+		                <div class="card__image"><img src="assets/img/offer/serv-3.png" alt=""></div>
+		                <h3 class="card__title">Family Trips</h3>
+		                <div class="card__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+		                    nihil?</div>
+		                <a href="#" class="card__btn btn">Read More</a>
+		            </div>
+		            <div class="offer__card card">
+		                <div class="card__image"><img src="assets/img/offer/serv-4.png" alt=""></div>
+		                <h3 class="card__title">Train Guides</h3>
+		                <div class="card__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+		                    nihil?</div>
+		                <a href="#" class="card__btn btn">Read More</a>
+		            </div>
+		            <div class="offer__card card">
+		                <div class="card__image"><img src="assets/img/offer/serv-5.png" alt=""></div>
+		                <h3 class="card__title">Adventure Trail</h3>
+		                <div class="card__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+		                    nihil?</div>
+		                <a href="#" class="card__btn btn">Read More</a>
+		            </div>
+		            <div class="offer__card card">
+		                <div class="card__image"><img src="assets/img/offer/serv-6.png" alt=""></div>
+		                <h3 class="card__title">Various Adventures</h3>
+		                <div class="card__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
+		                    nihil?</div>
+		                <a href="#" class="card__btn btn">Read More</a>
+		            </div>
+		        </div>
+		    </div>
+		</section>		<section class="blog">
+		    <div class="blog__container container">
+		        <h2 class="blog__title title">Our Daily Posts</h2>
+		        <div class="blog__slider">
+		            <div class="blog__wrapper swiper-wrapper">
+		                <div class="blog__post post swiper-slide">
+		                    <div class="post__image">
+		                        <img src="assets/img/blog/img-1.jpg" alt="">
+		                    </div>
+		                    <div class="post__info">
+		                        <a href="#" class="post__date"><i class="fa-solid fa-calendar"></i> 15th March, 2022 </a>
+		                        <a href="#" class="post__author"><i class="fa-solid fa-user"></i>By Admin </a>
+		                    </div>
+		                    <h3 class="post__title">Blog Title Goes Here.</h3>
+		                    <div class="post__text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+		                        Reprehenderit, deserunt.</div>
+		                    <a href="" class="post__btn btn">Read More</a>
+		                </div>
+		                <div class="blog__post post swiper-slide">
+		                    <div class="post__image">
+		                        <img src="assets/img/blog/img-2.jpg" alt="">
+		                    </div>
+		                    <div class="post__info">
+		                        <a href="#" class="post__date"><i class="fa-solid fa-calendar"></i> 15th March, 2022 </a>
+		                        <a href="#" class="post__author"><i class="fa-solid fa-user"></i>By Admin </a>
+		                    </div>
+		                    <h3 class="post__title">Blog Title Goes Here.</h3>
+		                    <div class="post__text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+		                        Reprehenderit, deserunt.</div>
+		                    <a href="" class="post__btn btn">Read More</a>
+		                </div>
+		                <div class="blog__post post swiper-slide">
+		                    <div class="post__image">
+		                        <img src="assets/img/blog/img-3.jpg" alt="">
+		                    </div>
+		                    <div class="post__info">
+		                        <a href="#" class="post__date"><i class="fa-solid fa-calendar"></i> 15th March, 2022 </a>
+		                        <a href="#" class="post__author"><i class="fa-solid fa-user"></i>By Admin </a>
+		                    </div>
+		                    <h3 class="post__title">Blog Title Goes Here.</h3>
+		                    <div class="post__text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+		                        Reprehenderit, deserunt.</div>
+		                    <a href="" class="post__btn btn">Read More</a>
+		                </div>
+		                <div class="blog__post post swiper-slide">
+		                    <div class="post__image">
+		                        <img src="assets/img/blog/img-4.jpg" alt="">
+		                    </div>
+		                    <div class="post__info">
+		                        <a href="#" class="post__date"><i class="fa-solid fa-calendar"></i> 15th March, 2022 </a>
+		                        <a href="#" class="post__author"><i class="fa-solid fa-user"></i>By Admin </a>
+		                    </div>
+		                    <h3 class="post__title">Blog Title Goes Here.</h3>
+		                    <div class="post__text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+		                        Reprehenderit, deserunt.</div>
+		                    <a href="" class="post__btn btn">Read More</a>
+		                </div>
+		                <div class="blog__post post swiper-slide">
+		                    <div class="post__image">
+		                        <img src="assets/img/blog/img-5.jpg" alt="">
+		                    </div>
+		                    <div class="post__info">
+		                        <a href="#" class="post__date"><i class="fa-solid fa-calendar"></i> 15th March, 2022 </a>
+		                        <a href="#" class="post__author"><i class="fa-solid fa-user"></i>By Admin </a>
+		                    </div>
+		                    <h3 class="post__title">Blog Title Goes Here.</h3>
+		                    <div class="post__text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+		                        Reprehenderit, deserunt.</div>
+		                    <a href="" class="post__btn btn">Read More</a>
+		                </div>
+		                <div class="blog__post post swiper-slide">
+		                    <div class="post__image">
+		                        <img src="assets/img/blog/img-6.jpg" alt="">
+		                    </div>
+		                    <div class="post__info">
+		                        <a href="#" class="post__date"><i class="fa-solid fa-calendar"></i> 15th March, 2022 </a>
+		                        <a href="#" class="post__author"><i class="fa-solid fa-user"></i>By Admin </a>
+		                    </div>
+		                    <h3 class="post__title">Blog Title Goes Here.</h3>
+		                    <div class="post__text text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+		                        Reprehenderit, deserunt.</div>
+		                    <a href="" class="post__btn btn">Read More</a>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</section>		<section class="subscribe">
+		    <h2 class="subscribe__title title">Subscirbe Now</h2>
+		
+		    <div class="subscribe__block">
+		        <div class="subscribe__text text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ipsam
+		            repellat nostrum esse officiis unde quisquam corporis doloremque adipisci similique!
+		        </div>
+		        <form action="" class="subscribe__form">
+		            <input type="text" placeholder="enter your e-mail">
+		            <button class="subscribe__btn">Subscribe</button>
+		        </form>
+		    </div>
+		    
+		</section>		<section class="partners">
+		    <div class="partners__container container">
+		        <div class="partners__slider">
+		            <div class="partners__wrapper swiper-wrapper">
+		                <div class="partners__slide swiper-slide"><img src="assets/img/partners/client-logo-1.png" alt="">
+		                </div>
+		                <div class="partners__slide swiper-slide"><img src="assets/img/partners/client-logo-2.png" alt="">
+		                </div>
+		                <div class="partners__slide swiper-slide"><img src="assets/img/partners/client-logo-3.png" alt="">
+		                </div>
+		                <div class="partners__slide swiper-slide"><img src="assets/img/partners/client-logo-4.png" alt="">
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</section>		<footer class="footer">
+		    <div class="footer__bg">
+		        <img src="assets/img/footer/footer-bg.jpg" alt="">
+		    </div>
+		    <div class="footer__container container">
+		        <div class="footer__sections">
+		            <div class="footer__section">
+		                <h3 class="footer__title">Quick Links</h3>
+		                <a href="#" data-target=".main" class="footer__link">Home</a>
+		                <a href="#" data-target=".about" class="footer__link">About</a>
+		                <a href="#" data-target=".products" class="footer__link">Shop</a>
+		                <a href="#" data-target=".packages" class="footer__link">Packages</a>
+		                <a href="#" data-target=".reviews" class="footer__link">Reviews</a>
+		                <a href="#" data-target=".blog" class="footer__link">Blogs</a>
+		            </div>
+		            <div class="footer__section">
+		                <h3 class="footer__title">Extra Links</h3>
+		                <a href="#" class="footer__link">My Account</a>
+		                <a href="#" class="footer__link">My Order</a>
+		                <a href="#" class="footer__link">My Wishlist</a>
+		                <a href="#" class="footer__link">Asq Questions</a>
+		                <a href="#" class="footer__link">Terms Our Use</a>
+		                <a href="#" class="footer__link">Privacy Policy</a>
+		            </div>
+		            <div class="footer__section">
+		                <h3 class="footer__title">Contact Info</h3>
+		                <a href="#" class="footer__contact phone"><span>+123-456-7890</span></a>
+		                <a href="#" class="footer__contact phone"><span>+111-222-3333</span></a>
+		                <a href="#" class="footer__contact e-mail"><span>travel@email.com</span></a>
+		                <a href="#" class="footer__contact address"><span>Kiev, Ukraine - 01011</span></a>
+		            </div>
+		            <div class="footer__section">
+		                <h3 class="footer__title">Follow Us</h3>
+		                <a href="#" class="footer__social facebook"><span>Facebook</span></a>
+		                <a href="#" class="footer__social twitter"><span>Twitter</span></a>
+		                <a href="#" class="footer__social instagram"><span>Instagram</span></a>
+		                <a href="#" class="footer__social linkedin"><span>Linkedin</span></a>
+		                <a href="#" class="footer__social github"><span>Github</span></a>
+		            </div>
+		        </div>
+		        <div class="footer__rights">
+		            Disign Created By <span>Mr. Web Designer</span> | HTML/CSS Code By <span>Sergio</span>
+		        </div>
+		    </div>
+		</footer>
+	</div>
+
+	<!-- Подключение Swiper slider -->
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
